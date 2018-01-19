@@ -17,17 +17,23 @@
   },
   "homepage": "https://github.com/Wangkd/react-news-website#readme",
   "dependencies": {
+    "babel-plugin-react-html-attrs": "^2.1.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babelify": "^8.0.0",
+    "css-loader": "^0.28.9",
+    "json-loader": "^0.5.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^4.2.0",
+    "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^1.16.5"
   },
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2"
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3"
   }
 }
