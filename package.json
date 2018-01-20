@@ -26,6 +26,7 @@
     "json-loader": "^0.5.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-responsive": "^4.0.3",
     "react-router": "^4.2.0",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
