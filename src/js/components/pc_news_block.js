@@ -1,13 +1,13 @@
 import React from 'react';
 import {Card} from 'antd';
-import {Router, Route, Link, browserHistory} from 'react-router'
+import {Link, BrowserRouter as Router,} from 'react-router-dom';
 export default class PCNewsBlock extends React.Component {
 	constructor() {
 		super();
 		this.state = {
 			news: ''
 		};
-	}
+	};
 	componentWillMount() {
 		var myFetchOptions = {
 			method: 'GET'
@@ -21,9 +21,11 @@ export default class PCNewsBlock extends React.Component {
 		const newsList = news.length
 			? news.map((newsItem, index) => (
 				<li key={index}>
-					{/* <Link to={`details/${newsItem.uniquekey}`} target="_blank"> */}
+				<Router>
+					<Link to={`details/${newsItem.uniquekey}`}>
 						{newsItem.title}
-					{/* </Link> */}
+					</Link>
+					</Router>
 				</li>
 			))
 			: '没有加载到任何新闻';
