@@ -13,7 +13,6 @@ import {
 } from 'antd';
 //import {Router, Route, Link, browserHistory} from 'react-router';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-//import { Link } from 'react-router-dom';
 const FormItem = Form.Item;
 const SubMenu = Menu.SubMenu;
 const TabPane = Tabs.TabPane;
@@ -112,7 +111,7 @@ class PCHeader extends React.Component {
 					<Col span={2}></Col>
 					<Col span={4}>
 						<a href="/" class="logo">
-							<img src="./src/images/logo.png" alt="logo" />
+							<img src="/src/images/logo.png" alt="logo" />
 							<span>ReactNews</span>
 						</a>
 					</Col>

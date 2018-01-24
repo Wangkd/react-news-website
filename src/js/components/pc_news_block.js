@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card} from 'antd';
-import {Link, BrowserRouter as Router,} from 'react-router-dom';
+import {Link,BrowserRouter as Router} from 'react-router-dom';
 export default class PCNewsBlock extends React.Component {
 	constructor() {
 		super();
@@ -22,7 +22,7 @@ export default class PCNewsBlock extends React.Component {
 			? news.map((newsItem, index) => (
 				<li key={index}>
 				<Router>
-					<Link to={`details/${newsItem.uniquekey}`}>
+					<Link to={`details/${newsItem.uniquekey}`} target="_blank">
 						{newsItem.title}
 					</Link>
 					</Router>

@@ -65,11 +65,11 @@ class CommonComments extends React.Component {
 
 	render() {
 		let { getFieldProps } = this.props.form;
-		const { commnets } = this.state;
-		const commnetList = commnets.length ?
-			commnets.map((comment, index) => (
-				<Card key={index} title={comment.UserName} extra={<a href="#">发布于 {commnet.datetime}</a>}>
-					<p>{comment.Commnets}</p>
+		const { comments } = this.state;
+		const commnetList = comments.length 
+		? comments.map((comment, index) => (
+				<Card key={index} title={comment.UserName} extra={<a href="#">发布于 {comment.datetime}</a>}>
+					<p>{comment.Comments}</p>
 				</Card>
 			))
 			:
